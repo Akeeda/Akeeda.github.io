@@ -3,7 +3,7 @@
 This is my personal portfolio website hosted with GitHub Pages.
 
 ## Live Website
-https://yourusername.github.io
+https://Akeeda.github.io
 
 ## Technologies Used
 - HTML
