@@ -8,7 +8,8 @@ https://Akeeda.github.io
 ## Technologies Used
 - HTML
 - CSS
-
+- Javascript
+  
 ## Features
 - Responsive design
 - Project showcase
