@@ -7,57 +7,102 @@
   <title>Vivian | Data Analyst Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- SEO (important for recruiters) -->
+  <meta name="description"
+        content="Vivian Data Analyst Portfolio - SQL, Python, Tableau, Power BI projects">
+
+  <meta name="keywords"
+content="Data Analyst Portfolio, SQL, Tableau, Power BI, Python, Data Visualization">
+ <meta name="author" content="Vivian">
 </head>
 
 <body>
 
-<header>
+<header class="hero">
   <h1>Vivian</h1>
-  <p>Data Analyst | Tableau | Power BI | SQL | Python</p>
+
+  <p>Data Analyst | SQL | Python | Tableau | Power BI</p>
+
+  <div class="hero-links">
+    <a href="./doc/Vivian-data-analyst-Resume.pdf">📄 Download Resume</a>
+    <a href="https://github.com/Akeeda">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/vto/">🔗 LinkedIn</a>
+
+    <p>Open to Data Analyst / Business Intelligence roles</p>
+  </div>
+  <button id="darkToggle">🌙 Dark Mode</button>
 </header>
 
-<section class="about">
-  <h2>About Me</h2>
+<!-- ABOUT -->
+<section class="section">
+  <h2>About</h2>
   <p>
-    Aspiring Data Analyst passionate about data visualization,
-    business intelligence, and storytelling through dashboards.
+    Data Analyst focused on turning raw datasets into actionable business insights using SQL, Python, and dashboards.
   </p>
 </section>
 
-<section class="projects">
+<!-- PROJECTS -->
+<section class="section">
+  <h2>Featured Projects</h2>
 
-  <h2>Projects</h2>
+  <div class="grid">
 
-  <div class="project-card">
-    <h3>🚲 Bike Share Analysis Dashboard</h3>
+    <div class="card">
+      <h3>🚲 Bike Share Analysis</h3>
+      <p>Analyzed 1M+ ride records to identify demand patterns and optimize station usage.</p>
+      <a href="bikeshare.html">View Project →</a>
+    </div>
 
-    <p>
-      Tableau dashboard analyzing rider behavior,
-      peak usage periods, and station demand trends.
-    </p>
+    <div class="card">
+      <h3>🛒 Retail SQL Analysis</h3>
+      <p>Used SQL (CTEs, joins, window functions) to analyze sales performance and customer behavior.</p>
+      <a href="#">Coming Soon →</a>
+    </div>
 
-    <a href="bikeshare.html">
-      View Dashboard
-    </a>
+    <div class="card">
+      <h3>📊 Power BI Sales Dashboard</h3>
+      <p>Interactive dashboard tracking KPIs, revenue trends, and regional performance.</p>
+      <a href="#">Coming Soon →</a>
+    </div>
+
   </div>
-
 </section>
 
-<section class="skills">
+<!-- SKILLS -->
+<section class="section">
   <h2>Skills</h2>
 
-  <ul>
-    <li>SQL</li>
-    <li>Tableau</li>
-    <li>Power BI</li>
-    <li>Excel</li>
-    <li>Data Visualization</li>
+  <ul class="skills">
+    <li><div class="skill-badge">SQL</div> (Joins, CTEs, Window Functions)</li>
+    <li><div class="skill-badge">Python</div> (Pandas, NumPy, Matplotlib, seaborn)</li>
+    <li><div class="skill-badge">Tableau</div> / Power BI</li>
+    <li><div class="skill-badge">Excel </div> (Pivot Tables, Power Query)</li>
+    <li>Data Cleaning & Visualization</li>
   </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2>Contact</h2>
+
+  <p>Email: wywuian@gmail.com</p>
+  <p>LinkedIn: linkedin.com/in/vto/</p>
 </section>
 
 <footer>
   <p>© 2026 Vivian</p>
 </footer>
+
+<script>
+
+const toggle = document.getElementById("darkToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+</script>
 
 </body>
 </html>

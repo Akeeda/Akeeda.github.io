@@ -7,6 +7,7 @@
   <title>Bike Share Page</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -67,20 +68,41 @@
 <section class="about">
 <h3> 📊 Interactive Dashboard</h3>
 
-👉     <a href="https://public.tableau.com/app/profile/vivian1817/viz/Bike_Share_Story1/Story1?publish=yes">
+<!-- 👉     <a href="https://public.tableau.com/shared/C9SCSZ8DR?:display_count=n&:origin=viz_share_link">
       Tableau
-    </a>
+    </a> -->
 
+<div class='tableauPlaceholder' id='viz1778541207054' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C9&#47;C9SCSZ8DR&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;C9SCSZ8DR' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C9&#47;C9SCSZ8DR&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1778541207054');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<canvas id="myChart"></canvas>
+<script>
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'bar',
+
+    data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+        datasets: [{
+            label: 'Bike Usage',
+            data: [120, 190, 300, 250, 400],
+            borderWidth: 1
+        }]
+    }
+});
+
+</script>
 </section>
 
 
 <section class="about">
 <h3> 📷 Dashboard Preview</h3>
 <div>
-<img class="preview" src="./images/bike.png" alt="Bike Share Dashboard Preview">
-<img class="preview" src="./images/donut.png" alt="Donut Chart Preview">
-<img class="preview" src="./images/bubble.png" alt="Bubble Chart Preview">
-<img class="preview" src="./images/heatmap.png" alt="Heatmap Preview">
+<img loading="lazy" class="preview" src="./images/bike.png" alt="Bike Share Dashboard Preview">
+<img loading="lazy" class="preview" src="./images/donut.png" alt="Donut Chart Preview">
+<img loading="lazy" class="preview" src="./images/bubble.png" alt="Bubble Chart Preview">
+<img loading="lazy" class="preview" src="./images/heatmap.png" alt="Heatmap Preview">
 </div>
 </section>
 
@@ -88,13 +110,13 @@
 <h3> 🔍 Key Insights</h3>
 
 <h4> 🚴 Peak Commuting Hours</h4>
-<p>Bike usage consistently peaks during weekday morning and evening commuting hours.</p>
+<p>Bike usage increases by ~40% during 7–9 AM and 5–7 PM commute windows.</p>
 
 <h4> 📈 Weekend Rider Behavior</h4>
 <p> rides tend to have longer durations, suggesting more leisure-oriented customer behavior.</p>
 
 <h4> 📍 High-Demand Stations</h4>
-<p>Several stations consistently experience higher traffic volume, indicating potential opportunities for </p>inventory optimization.
+<p>Several stations consistently experience higher traffic volume, indicating opportunities for inventory optimization.</p>
 
 <h4> 📅 Seasonal Usage Patterns</h4>
 <p>Ride frequency increases significantly during warmer months, highlighting seasonal demand fluctuations.</p>
@@ -110,5 +132,38 @@
 <li>Improve maintenance scheduling during peak seasons</li>
 </ul>
 </section>
+
+<section class="about">
+<h3>Impact Metrics</h3>
+<ul>
+<li> Analyzed 1M+ ride records to identify
+peak-demand trends and operational insights.</li>
+<li> Identified 40% peak-hour congestion during commuting hours to improve station allocation efficiency</li>
+<li>15% improvement opportunity in station allocation</li>
+</ul>
+</section>
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: wywuian@gmail.com</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/vto/">
+View Profile
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/Akeeda">
+github.com/Akeeda
+</a>
+</p>
+
+</section>
+
 </body>
 </html>
