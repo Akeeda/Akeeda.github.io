@@ -7,7 +7,7 @@
   <title>Bike Share Page</title>
 
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -19,129 +19,113 @@
 
 </header>
 
+
+
 <section class="about">
-<h3> 📌 Project Overview</h3>
-
-<p>This project analyzes bike share usage trends using Tableau to uncover rider behavior, commuting patterns, station demand, and operational insights.</p>
-
-<p>The dashboard was designed to support data-driven decision-making through interactive visual storytelling.</p>
+<h3>🎯 Business Task</h3>
+<p>Cyclistic's marketing team wants to understand how annual members and casual riders use the bike-share service differently. The goal of this analysis is to identify behavioral differences between the two rider groups and provide recommendations that could help convert casual riders into annual members.</p>
 </section>
 
 <section class="about">
-<h3>🎯 Business Objectives</h3>
+<h3> 📂 Data Sources</h3>
 <ul>
-<li> Identify peak bike usage periods</li>
-<li> Analyze customer riding behavior</li>
-<li> Discover high-demand stations</li>
-<li>Understand weekday vs weekend usage trends</li>
-<li> Provide operational recommendations</li>
+  <li>Cyclistic/Divvy historical trip data covering 12 months.</li>
+<li>Data includes ride information such as rider type, ride duration, start station, date, and time of ride.</li>
+<li>Data was obtained from the Google Data Analytics Capstone Case Study dataset.</li>
+<li>The analysis focuses on comparing casual riders and annual members.</li>
+<li>Dataset obtained from:<a href="https://divvy-tripdata.s3.amazonaws.com/index.html" target="_blank">View Original Dataset</a></li>
 </ul>
 </section>
 
 <section class="about">
-<h3> 🛠 Tools Used</h3>
-<table class="look">
-<tr>
-<th>Tool</th>
-<th>Purpose</th>
-</tr>
-<tr>
-<td>Tableau</td>
-<td>Dashboard visualization</td>
-</tr>
-<tr>
-<td>SQL</td>
-<td>Query Databases</td>
-</tr>
-<tr>
-<td>Excel</td>
-<td>Data cleaning</td>
-</tr>
-<tr>
-<td>CSV Dataset</td>
-<td>Source data</td>
-</tr>
-</table>
+<h3> Data Cleaning & Manipulation</h3>
+<ul>
+  <li>Combined 12 months of trip data into a single dataset.</li>
+  <li>Removed duplicate records.</li>
+  <li>Removed records with missing or invalid values.</li>
+  <li>Calculated ride duration.</li>
+  <li>Extracted month, weekday, and hour from ride timestamps.</li>
+  <li>Created weekday/weekend classifications.</li>
+  <li>Created peak-hour analysis fields.</li>
+  <li>Prepared aggregated datasets for Tableau visualizations.</li>
+</ul>
 </section>
 
 
 <section class="about">
-<h3> 📊 Interactive Dashboard</h3>
+<h3> Summary of Analysis</h3>
+
+<p>Analysis of 12 months of Cyclistic trip data revealed clear behavioral differences between annual members and casual riders. Members primarily use bikes for weekday commuting and exhibit consistent usage throughout the year, while casual riders are more active on weekends and tend to take longer recreational trips. These findings suggest opportunities to convert casual riders into annual members through targeted marketing and membership incentives.</p>
+</section>
+
+
+<section class="about">
+<h3> 📊 Tableau Story</h3>
 
 <!-- 👉     <a href="https://public.tableau.com/shared/C9SCSZ8DR?:display_count=n&:origin=viz_share_link">
       Tableau
     </a> -->
 
-<div class='tableauPlaceholder' id='viz1778541207054' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C9&#47;C9SCSZ8DR&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;C9SCSZ8DR' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C9&#47;C9SCSZ8DR&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1778541207054');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-<canvas id="myChart"></canvas>
-<script>
-
-const ctx = document.getElementById('myChart');
-
-new Chart(ctx, {
-    type: 'bar',
-
-    data: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-        datasets: [{
-            label: 'Bike Usage',
-            data: [120, 190, 300, 250, 400],
-            borderWidth: 1
-        }]
-    }
-});
-
-</script>
+<div class='tableauPlaceholder' id='viz1781995768730' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;bi&#47;bikeshare_17819942591980&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='bikeshare_17819942591980&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;bi&#47;bikeshare_17819942591980&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1781995768730');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 </section>
 
 
 <section class="about">
-<h3> 📷 Dashboard Preview</h3>
-<div>
-<img loading="lazy" class="preview" src="./images/bike.png" alt="Bike Share Dashboard Preview">
-<img loading="lazy" class="preview" src="./images/donut.png" alt="Donut Chart Preview">
-<img loading="lazy" class="preview" src="./images/bubble.png" alt="Bubble Chart Preview">
-<img loading="lazy" class="preview" src="./images/heatmap.png" alt="Heatmap Preview">
-</div>
+<h3> Project Outcome</h3>
+
+<p>This analysis identified key behavioral differences between annual members and casual riders. The findings support targeted marketing strategies aimed at increasing annual membership adoption among casual riders through digital campaigns, membership incentives, and commuter-focused promotions.</p>
+</section>
+
+
+<section class="about">
+<h3>🛠 Tools Used</h3>
+<table class="look">
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Tableau</td>
+<td>Data visualization, dashboard design, and storytelling</td>
+</tr>
+
+<tr>
+<td>SQL</td>
+<td>Data cleaning, transformation, and analysis</td>
+</tr>
+
+<tr>
+<td>Excel</td>
+<td>Data exploration and validation</td>
+</tr>
+
+<tr>
+<td>CSV Dataset</td>
+<td>Source data for analysis</td>
+</tr>
+</table>
 </section>
 
 <section class="about">
-<h3> 🔍 Key Insights</h3>
+<h3>Skills Demonstrated</h3>
 
-<h4> 🚴 Peak Commuting Hours</h4>
-<p>Bike usage increases by ~40% during 7–9 AM and 5–7 PM commute windows.</p>
-
-<h4> 📈 Weekend Rider Behavior</h4>
-<p> rides tend to have longer durations, suggesting more leisure-oriented customer behavior.</p>
-
-<h4> 📍 High-Demand Stations</h4>
-<p>Several stations consistently experience higher traffic volume, indicating opportunities for inventory optimization.</p>
-
-<h4> 📅 Seasonal Usage Patterns</h4>
-<p>Ride frequency increases significantly during warmer months, highlighting seasonal demand fluctuations.</p>
-</section>
-
-<section class="about">
-<h3> 💡 Business Recommendations</h3>
 <ul>
-    <li>Increase bike inventory during rush hours</li>
-<li>Optimize station rebalancing strategies</li>
-<li>Expand capacity at high-demand stations</li>
-<li>Launch weekend-focused marketing campaigns</li>
-<li>Improve maintenance scheduling during peak seasons</li>
+<li>Data Cleaning</li>
+<li>Data Transformation</li>
+<li>SQL Querying</li>
+<li>Exploratory Data Analysis (EDA)</li>
+<li>Data Visualization</li>
+<li>Tableau Dashboard Design</li>
+<li>Data Storytelling</li>
+<li>Business Intelligence</li>
+<li>Marketing Analytics</li>
+<li>Data-Driven Decision Making</li>
 </ul>
+
 </section>
 
-<section class="about">
-<h3>Impact Metrics</h3>
-<ul>
-<li> Analyzed 1M+ ride records to identify
-peak-demand trends and operational insights.</li>
-<li> Identified 40% peak-hour congestion during commuting hours to improve station allocation efficiency</li>
-<li>15% improvement opportunity in station allocation</li>
-</ul>
-</section>
+
 
 <section class="contact">
 
