@@ -2,15 +2,17 @@
 
 This is my personal portfolio website hosted with GitHub Pages.
 
-## Live Website
+## Data Analysis Portfolio
 https://Akeeda.github.io
 
-## Technologies Used
-- HTML
-- CSS
-- Javascript
-  
-## Features
-- Responsive design
-- Project showcase
-- Contact section
+## Home pages
+- Hero
+- Projects
+- Skills
+- About
+- Contact
+
+## Projects
+- Bike Share
+- Olist Brazilian E-commerce
+- Project 3:  coming soon
