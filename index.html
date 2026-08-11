@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vivian | Data Analyst Portfolio</title>
-
   <link rel="stylesheet" href="style.css">
 
   <!-- SEO (important for recruiters) -->
@@ -17,26 +16,80 @@ content="Data Analyst Portfolio, SQL, Tableau, Power BI, Python, Data Visualizat
  <meta name="author" content="Vivian">
 </head>
 
+<!-- BODY -->
 <body>
 
 <header class="hero">
-  <h1>Vivian</h1>
+  <h1>Vivian To</h1>
+   <p class="tagline"><i>Aspiring Data Analyst passionate about uncovering insights hidden in data</i></p>
+  <p class="skills"> ( SQL | Tableau | Excel | Power BI | Python | Data Visualization )</p>
 
-  <p class="tagline"><i>Aspiring Data Analyst passionate about uncovering insights hidden in data</i></p>
-  <p class="skills"> (SQL | Tableau | Excel | Power BI | Python | Data Visualization)</p>
+   <p>Open to Data Analyst / Business Intelligence roles</p>
   <div class="hero-links">
-    <a href="./doc/Download-Resume.pdf">📄 Download Resume</a>
-    <a href="https://github.com/Akeeda">💻 GitHub</a>
-    <a href="https://www.linkedin.com/in/vto/">🔗 LinkedIn</a>
-
-    <p style="font-size:14px">Open to Data Analyst / Business Intelligence roles</p>
-  </div>
-  <button id="darkToggle">🌙 Dark Mode</button>
+    <a href="Assets/Files/Download-Resume.pdf">Download Resume</a>
+    <a href="https://github.com/Akeeda">GitHub</a>
+    <a href="https://www.linkedin.com/in/vto/">LinkedIn</a>
+ </div>
+  <button id="darkToggle" class="btn">🌙 Dark Mode</button>
 </header>
+
+
+<!-- PROJECTS -->
+<section class="section">
+  <h3>Featured Projects</h3>
+
+  <!-- # 1 -->
+  <div class="grid">
+  <div class="card">
+  <img src="Assets/Images/bicycle.jpg" alt="Bicycle" class="card-image">
+<div class="card-content">
+  <h4>Bike Share Analysis</h4>
+  <p>Analyzed 1M+ ride records to uncover rider behavior trends and support membership growth strategies.</p>
+  <a href="bikeshare.html">View Project →</a>
+</div>
+</div>
+
+  <!-- # 2 -->
+    <div class="card">
+       <img src="Assets/Images/ecommerce.jpg" alt="E-commerce" class="card-image">
+<div class="card-content">
+      <h4>Olist Brazilian Retail Analysis</h4>
+      <p>Used SQL (CTEs, joins, window functions), and Power BI to analyze sales performance and customer behavior.</p>
+      <a href="olist_brazilian.html">View Project →</a>
+    </div>
+      </div>
+
+    <!-- # 3 -->
+    <div class="card">
+      <h4>Project 3 — Python Data Analysis:</h4>
+      <p>Python + Pandas + Seaborn
+→ Data cleaning + exploratory analysis + statistical thinking + visualization</p>
+      <!-- <h4>Power BI Sales Dashboard</h4>
+      <p>Interactive dashboard tracking KPIs, revenue trends, and regional performance.</p> -->
+      <a href="#">Coming Soon →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <h3>Skills</h3>
+
+  <ul class="skills">
+    <li><div class="skill-badge">SQL</div> (Joins, CTEs, Window Functions)</li>
+    <li><div class="skill-badge">Python</div> (Pandas, NumPy, Matplotlib, seaborn)</li>
+    <li><div class="skill-badge">Tableau</div>Data Cleaning & Visualization</li>
+     <li><div class="skill-badge">Power BI </div> (Query, Transformation, DAX, Dashboard Design)</li>
+    <li><div class="skill-badge">Excel </div> (VLookup, Pivot Tables, Power Query)</li>
+
+
+  </ul>
+</section>
 
 <!-- ABOUT -->
 <section class="section">
-  <h2>About Me</h2>
+  <h3>About Me</h3>
   <div class="about-card">
   <p>
    Hi, I’m Vivian!</p>
@@ -51,67 +104,25 @@ content="Data Analyst Portfolio, SQL, Tableau, Power BI, Python, Data Visualizat
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="section">
-  <h2>Featured Projects</h2>
-
-  <div class="grid">
-
-<div class="card">
-  <h3>🚲 Bike Share Analysis</h3>
-  <p>Analyzed 1M+ ride records to uncover rider behavior trends and support membership growth strategies.</p>
-  <a href="bikeshare.html">View Project →</a>
-</div>
-
-    <div class="card">
-      <h3>🛒 Retail SQL Analysis</h3>
-      <p>Used SQL (CTEs, joins, window functions) to analyze sales performance and customer behavior.</p>
-      <a href="#">Coming Soon →</a>
-    </div>
-
-    <div class="card">
-      <h3>📊 Power BI Sales Dashboard</h3>
-      <p>Interactive dashboard tracking KPIs, revenue trends, and regional performance.</p>
-      <a href="#">Coming Soon →</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section class="section">
-  <h2>Skills</h2>
-
-  <ul class="skills">
-    <li><div class="skill-badge">SQL</div> (Joins, CTEs, Window Functions)</li>
-    <li><div class="skill-badge">Python</div> (Pandas, NumPy, Matplotlib, seaborn)</li>
-    <li><div class="skill-badge">Tableau</div> / Power BI</li>
-    <li><div class="skill-badge">Excel </div> (Pivot Tables, Power Query)</li>
-    <li>Data Cleaning & Visualization</li>
-  </ul>
-</section>
-
 <!-- CONTACT -->
 <section class="section">
-  <h2>Contact</h2>
+  <h3>Contact</h3>
 
   <p>Email: wywuian@gmail.com</p>
   <p>LinkedIn: linkedin.com/in/vto/</p>
 </section>
 
 <footer>
-  <p>© 2026 Vivian</p>
+  <p>Copyright © Vivian To 2026</p>
 </footer>
 
 <script>
-
 const toggle = document.getElementById("darkToggle");
-
 toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
-
 </script>
+
 
 </body>
 </html>

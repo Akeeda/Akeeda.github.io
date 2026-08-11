@@ -4,30 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bike Share Page</title>
-
+  <title>Bike Share Project</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 
+<!-- BODY -->
 <body>
+<header class="project-header">
+<h2> Bike Share Analysis Dashboard</h2>
+  <button id="darkToggle" class="btn">🌙 Dark Mode</button>
 
-<header>
-
-
-<h2> 🚲 Bike Share Analysis Dashboard</h2>
-
+  <div class="section">
+    <div class="image-shadow">
+  <img src="Assets/Images/bicycle.jpg" alt="Bicycle" class="project-image">
+</div>
+</div>
 </header>
 
-
-
-<section class="about">
-<h3>🎯 Business Task</h3>
+<section class="section">
+  <div class="project-content">
+<h3>Business Task</h3>
 <p>Cyclistic's marketing team wants to understand how annual members and casual riders use the bike-share service differently. The goal of this analysis is to identify behavioral differences between the two rider groups and provide recommendations that could help convert casual riders into annual members.</p>
+</div>
 </section>
 
-<section class="about">
-<h3> 📂 Data Sources</h3>
+<!-- DATA -->
+<section class="section">
+  <div class="project-content">
+<h3> Data Sources</h3>
 <ul>
   <li>Cyclistic/Divvy historical trip data covering 12 months.</li>
 <li>Data includes ride information such as rider type, ride duration, start station, date, and time of ride.</li>
@@ -35,9 +39,11 @@
 <li>The analysis focuses on comparing casual riders and annual members.</li>
 <li>Dataset obtained from:<a href="https://divvy-tripdata.s3.amazonaws.com/index.html" target="_blank">View Original Dataset</a></li>
 </ul>
+</div>
 </section>
 
-<section class="about">
+<section class="section">
+  <div class="project-content">
 <h3> Data Cleaning & Manipulation</h3>
 <ul>
   <li>Combined 12 months of trip data into a single dataset.</li>
@@ -49,36 +55,43 @@
   <li>Created peak-hour analysis fields.</li>
   <li>Prepared aggregated datasets for Tableau visualizations.</li>
 </ul>
+</div>
 </section>
 
-
-<section class="about">
+<!-- SUMMARY -->
+<section class="section">
+  <div class="project-content">
 <h3> Summary of Analysis</h3>
-
 <p>Analysis of 12 months of Cyclistic trip data revealed clear behavioral differences between annual members and casual riders. Members primarily use bikes for weekday commuting and exhibit consistent usage throughout the year, while casual riders are more active on weekends and tend to take longer recreational trips. These findings suggest opportunities to convert casual riders into annual members through targeted marketing and membership incentives.</p>
+</div>
 </section>
 
-
-<section class="about">
-<h3> 📊 Tableau Story</h3>
-
+<!-- TABLEAU -->
+<section class="section">
+<div class="project-content">
+<h3> Tableau</h3>
 <!-- 👉     <a href="https://public.tableau.com/shared/C9SCSZ8DR?:display_count=n&:origin=viz_share_link">
       Tableau
     </a> -->
 
-<div class='tableauPlaceholder' id='viz1782153715076' style='position: relative'><noscript><a href='#'><img alt='Bike Share Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;bi&#47;bikeshare_17819942591980&#47;BikeShareStory&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='bikeshare_17819942591980&#47;BikeShareStory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;bi&#47;bikeshare_17819942591980&#47;BikeShareStory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1782153715076');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<div class='tableauPlaceholder' id='viz1782153715076' style='position: relative'><noscript><a href='#'><img alt='Bike Share Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;bi&#47;bikeshare_17819942591980&#47;BikeShareStory&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='bikeshare_17819942591980&#47;BikeShareStory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;bi&#47;bikeshare_17819942591980&#47;BikeShareStory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+<script type='text/javascript'>                    var divElement = document.getElementById('viz1782153715076');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+</div>
 </section>
 
-
-<section class="about">
+<!-- OUTCOME -->
+<section class="section">
+  <div class="project-content">
 <h3> Project Outcome</h3>
-
 <p>This analysis identified key behavioral differences between annual members and casual riders. The findings support targeted marketing strategies aimed at increasing annual membership adoption among casual riders through digital campaigns, membership incentives, and commuter-focused promotions.</p>
+</div>
 </section>
 
-
-<section class="about">
-<h3>🛠 Tools Used</h3>
+<!-- TOOLS -->
+<section class="section">
+  <div class="project-content">
+<h3> Tools Used</h3>
 <table class="look">
 <tr>
 <th>Tool</th>
@@ -105,11 +118,13 @@
 <td>Source data for analysis</td>
 </tr>
 </table>
+</div>
 </section>
 
-<section class="about">
+<!-- SKILLS -->
+<section class="section">
+  <div class="project-content">
 <h3>Skills Demonstrated</h3>
-
 <ul>
 <li>Data Cleaning</li>
 <li>Data Transformation</li>
@@ -122,32 +137,35 @@
 <li>Marketing Analytics</li>
 <li>Data-Driven Decision Making</li>
 </ul>
-
+</div>
 </section>
 
 
+<!-- LINK PAGES -->
+<section class="section">
+  <div class="space">
+<a href="index.html" class="tooltip">Home<span class="tooltiptext">Go Home</span></a>
+<a href="olist_brazilian.html" class="tooltip">Olist Brazilian Retail<span class="tooltiptext">Go to Project 2</span></a>
+</div>
+</section>
 
+<!-- CONTACT -->
 <section class="contact">
-
-<h2>Contact</h2>
-
+<div class="section">
+<h3>Contact</h3>
 <p>Email: wywuian@gmail.com</p>
-
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/vto/">
-View Profile
-</a>
-</p>
-
-<p>
-GitHub:
-<a href="https://github.com/Akeeda">
-github.com/Akeeda
-</a>
-</p>
-
+<p>LinkedIn:<a href="https://www.linkedin.com/in/vto/">View Profile</a></p>
+<p>GitHub:<a href="https://github.com/Akeeda">github.com/Akeeda</a></p>
+</div>
 </section>
+
+<!-- JAVASCRIPT -->
+<script>
+const toggle = document.getElementById("darkToggle");
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+</script>
 
 </body>
 </html>
