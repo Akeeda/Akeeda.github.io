@@ -444,6 +444,10 @@ td{
   opacity: 1;
 }
 
+.space {
+text-align: center;
+}
+
 .space a{
     color: var(--bright-blue);
     text-decoration: none;
