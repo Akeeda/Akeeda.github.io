@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olist Brazilian Project</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- BODY -->
+<body>
+<header class="project-header">
+<h2> Olist Brazilian E-Commerce Analysis</h2>
+  <button id="darkToggle" class="btn">🌙 Dark Mode</button>
+
+    <div class="section">
+  <img src="Assets/Images/ecommerce.jpg" alt="Bicycle" class="project-image">
+</div>
+</header>
+
+
+<section class="section">
+<div class="project-content">
+<h3>Goal</h3>
+<p>This project analyzes the Olist Brazilian E-Commerce dataset using SQL to uncover business insights related to sales performance, customer behavior, seller performance, customer retention, and product quality.</p>
+</div>
+</section>
+
+<!-- DATA -->
+<section class="section">
+<div class="project-content">
+<h3> Data Sources</h3>
+<ul>
+<li>olist_customers_dataset.csv</li>
+<li>olist_geolocation_dataset.cs</li>
+<li>olist_order_items_dataset.csv</li>
+<li>olist_order_payments_dataset.csv</li>
+<li>olist_order_reviews_dataset.csv</li>
+<li>olist_orders_dataset.csv</li>
+<li>olist_products_dataset.csv</li>
+<li>olist_sellers_dataset.csv</li>
+<li>product_category_name_translation.csv</li>
+</ul>
+<p>Dataset obtained from Kaggle:<a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" target="_blank">View Original Dataset</a></p>
+</div>
+</section>
+
+
+<section class="section">
+<div class="project-content">
+<h3>ER Diagram</h3>
+<img src="./Assets/Images/Olist/ER-Diagram.png"  alt="Top ten product categories by revenue" class="analysis-image">
+</div>
+</section>
+
+<!-- SQL QUERY -->
+<section class="section">
+<div class="project-content">
+<h3>SQL Query</h3>
+<h4>I.  Revenue Analysis</h4>
+<div class="analysis">
+<h5>1.  Total Revenue</h5>
+<p><strong>Question:</strong>  What is the total revenue?</p>
+<p><strong>SQL:</strong>  <code>01_total_revenue.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/01_.png"  alt="Total revenue" class="analysis-image">
+</div>
+
+<div class="analysis">
+<h5>2.  Top Revenue-Generating Product Categories</h5>
+<p><strong>Question:</strong>  What are the top 10 product categories by revenue?</p>
+<p><strong>SQL:</strong>  <code>02_product_categories_by_revenue.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/02_.png"  alt="Top ten product categories by revenue" class="analysis-image">
+</div>
+
+<div class="analysis">
+<h5>3. Monthly Revenue Trend Analysis</h5>
+<p><strong>Question:</strong>  What is the monthly revenue trend?  How much did revenue increase each month?   What is the monthly revenue growth rate?</p>
+<p><strong>SQL:</strong>  <code>03_monthly_revenue_growth_rate.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/03_.png"  alt="Monthly revenue trend chart" class="analysis-image">
+</div>
+
+<h4>II.  Customer Analysis</h4>
+<div class="analysis">
+<h5>4.  Highest-spending customers</h5>
+<p><strong>Question:</strong>  Which customers generate the highest total spend?</p>
+<p><strong>SQL:</strong>  <code>04_customers_highest_total_spend.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/04_.png"  alt="customers_total_highest_spend" class="analysis-image">
+</div>
+
+<div class="analysis">
+<h5>5.  Number of purchases</h5>
+<p><strong>Question:</strong> How many customers make a second, third, or subsequent purchase?</p>
+<p><strong>SQL:</strong>  <code>05_customers_with_installments.sql</code></p>
+<p><strong>Finding:</strong></p> <img src="./Assets/Images/Olist/05_.png"  alt="customers_with_installments" class="analysis-image">
+</div>
+
+<div class="analysis">
+<h5>6.  First purchase date</h5>
+<p><strong>Question:</strong> What is each customer's first purchase date?</p>
+<p><strong>SQL:</strong>  <code>06_customers_first_purchase_date.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/06_.png"  alt="customers_first_purchase_date" class="analysis-image">
+</div>
+
+<h4>III.  Seller Analysis</h4>
+<div class="analysis">
+<h5>7.  Top sellers</h5>
+<p><strong>Question:</strong>Which sellers have the highest revenue?</p>
+<p><strong>SQL:</strong>  <code>07_sellers_highest_revenue.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/07_.png"  alt="sellers_highest_revenue" class="analysis-image">
+</div>
+
+<div class="analysis">
+<h5>8.  Seller ranking by state</h5>
+<p><strong>Question:</strong> How do sellers rank by total revenue within each state?</p>
+<p><strong>SQL:</strong>  <code>08_rank_sellers_revenue_by_state.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/08_.png"  alt="Sellers revenue ranking by state" class="analysis-image">
+</div>
+
+<h4>IV.  Customer Retention</h4>
+
+<div class="analysis">
+<h5>9.  Cohort analysis:   Retention</h5>
+<p><strong>Question:</strong>   How many customers from each acquisition cohort purchased in each subsequent month?</p>
+<p><strong>SQL:</strong>  <code>09_cohort_retention_analysis.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/09_.png"  alt="Repeat purchase rate" class="analysis-image">
+</div>
+
+<div class="analysis">
+<h5>10.  Cohort analysis:   Retention rate</h5>
+<p><strong>Question:</strong>   What percentage of customers remain active or make another purchase over time?</p>
+<p><strong>SQL:</strong>  <code>10_retention_rate.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/10_.png"  alt="Retention rate" class="analysis-image">
+</div>
+
+<h4>V.  Product Quality</h4>
+<div class="analysis">
+<h5>11.  Review score by category</h5>
+<p><strong>Question:</strong>   What is the average review score per product category?</p>
+<p><strong>SQL:</strong>  <code>11_review_score.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/11_.png"  alt="review_score" class="analysis-image">
+</div>
+
+<h4>VI.  Delivery & Logistics</h4>
+<div class="analysis">
+<h5>12.  Review score by delivery</h5>
+<p><strong>Question:</strong>   What is the review score for delivery days?</p>
+<p><strong>SQL:</strong>  <code>12_delivery_review_score.sql</code></p>
+<p><strong>Finding:</strong> </p> <img src="./Assets/Images/Olist/12_.png"  alt="Average review score" class="analysis-image">
+</div>
+
+<div class="analysis">
+<h5>13.  Delivery time vs. review score</h5>
+<p><strong>Question:</strong>   Does faster delivery correlate with a higher review score?</p>
+<p><strong>SQL:</strong>  <code>12_correlation_delivery_review_score.sql</code></p>
+<p><strong>Finding:</strong> The Pearson correlation coefficient between delivery time and review score is -0.334, indicating a weak negative correlation.This suggests that customers who
+receive their orders more quickly tend to give slightly higher review scores, although delivery speed alone does not strongly predict customer ratings.</p>
+</div>
+
+<h4>VII.  Order Analysis</h4>
+<div class="analysis">
+<h5>14.  Installment payment behavior</h5>
+<p><strong>Question:</strong> Do orders paid in more installments have a higher average order value?</p>
+<p><strong>SQL:</strong>  <code>14_customers_with_installments.sql</code></p>
+<p><strong>Finding:</strong> Customers who use installment payments spend more than customers who pay without installments.  Customers using a higher number of installments also tend to spend more.</p> <img src="./Assets/Images/Olist/05_.png"  alt="customers_with_installments" class="analysis-image">
+</div>
+
+</div>
+</section>
+
+
+<!-- POWER BI -->
+<section class="section">
+<div class="project-content">
+<h3>Power BI</h3>
+<p>
+An interactive Power BI dashboard was developed to complement the SQL analysis.
+The dashboard enables users to explore sales performance, customer behavior,
+seller performance, product quality, and customer retention through interactive
+visualizations and filters.
+</p>
+
+<h5>Power BI Dashboard</h5>
+
+<div class="dashboard-image-container">
+<img src="./Assets/Images/Olist/Exec_overview_1.png"
+     alt="Power BI Executive Dashboard">
+      <div class="container">
+     <p>Executive Overview</p>
+ </div>
+</div>
+
+<div class="dashboard-image-container">
+<img src="./Assets/Images/Olist/Exec_overview.png"
+     alt="Power BI Executive Dashboard">
+<div class="container">
+     <p>Executive Overview</p>
+ </div>
+</div>
+
+<div class="dashboard-image-container">
+<img src="./Assets/Images/Olist/Product_cat_detail.png"
+     alt="Product Category Dashboard">
+     <div class="container">
+     <p>Product Category Detail</p>
+ </div>
+</div>
+
+<div class="dashboard-image-container">
+<img src="./Assets/Images/Olist/Customer_analytics.png"
+     alt="Customer Analytics Dashboard">
+     <div class="container">
+     <p>Customer Analytics</p>
+ </div>
+</div>
+
+<div class="dashboard-image-container">
+<img src="./Assets/Images/Olist/Seller_performance.png"
+     alt="Seller Performance Dashboard">
+     <div class="container">
+     <p>Seller Performance</p>
+ </div>
+</div>
+
+<div class="dashboard-image-container">
+<img src="./Assets/Images/Olist/Customer_experience.png"
+     alt="Customer Experience Dashboard">
+     <div class="container">
+     <p>Customer Experience</p>
+ </div>
+</div>
+</div>
+</section>
+
+
+<!-- TOOLS -->
+<section class="section">
+<div class="project-content">
+<h3>Tools Used</h3>
+<table class="look">
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Power BI</td>
+<td>Data visualization, and dashboard design</td>
+</tr>
+
+<tr>
+<td>SQL</td>
+<td>Data cleaning, transformation, and analysis</td>
+</tr>
+
+<tr>
+<td>Excel</td>
+<td>Data exploration and validation</td>
+</tr>
+
+<tr>
+<td>CSV Dataset</td>
+<td>Source data for analysis</td>
+</tr>
+</table>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+<div class="project-content">
+<h3>Skills Demonstrated</h3>
+<ul>
+<li>Data Transformation</li>
+<li>SQL Querying (Joins, CTEs, Window Functions)</li>
+<li>Exploratory Data Analysis (EDA)</li>
+<li>Data Visualization</li>
+<li>Power BI Dashboard Design</li>
+<li>DAX</li>
+<li>Business Intelligence</li>
+<li>Marketing Analytics</li>
+</ul>
+</div>
+</section>
+
+<!-- LINK PAGES -->
+<section class="section">
+  <div class="space">
+<a href="index.html" class="tooltip">Home<span class="tooltiptext">Go Home</span></a>
+<a href="bikeshare.html" class="tooltip">Bike Share<span class="tooltiptext">Go to Project 1</span></a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<div class="section">
+<h3>Contact</h3>
+<p>Email: wywuian@gmail.com</p>
+<p>LinkedIn:<a href="https://www.linkedin.com/in/vto/">View Profile</a></p>
+<p>GitHub:<a href="https://github.com/Akeeda">github.com/Akeeda</a></p>
+</div>
+</section>
+
+<!-- JAVASCRIPT -->
+<script>
+const toggle = document.getElementById("darkToggle");
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");});
+</script>
+
+</body>
+</html>
