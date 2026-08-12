@@ -20,3 +20,24 @@ https://Akeeda.github.io
 - Bike Share Analysis
 - Olist Brazilian E-commerce Analysis
 - Online Retail Customer & Sales Analysis
+
+## Tools & Technologies
+
+### Programming & Data Analysis
+- Python
+- Pandas
+- NumPy
+
+### Data Visualization & BI
+- Matplotlib
+- Seaborn
+- Tableau
+- Power BI
+
+### Development & Workflow
+- Jupyter Notebook
+- VS Code
+- GitHub
+- GitHub Pages
+
+
