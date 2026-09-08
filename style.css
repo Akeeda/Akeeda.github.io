@@ -89,6 +89,7 @@ h2 {
 h3 {
   font-size: 1.953rem;
 }
+<<<<<<< HEAD
 
 h4 {
   font-size: 1.563rem;
@@ -127,6 +128,46 @@ h4, h5 {
     font-weight: 500;
 }
 
+=======
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: var(--smallText);
+}
+
+/* ================================================ */
+a {
+  text-decoration:  none;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+h2, h3 {
+    color: var(--md-blue);
+}
+
+h4, h5 {
+    color: var(--md-blue);
+    font-weight: 500;
+}
+
+>>>>>>> eb35c7d7a9600cf4bcc0f2e716965180c37b6133
 /* HERO */
 .hero {
   min-height: 100vh;
@@ -234,6 +275,7 @@ img {
   width: 100%;
   display: block;
   object-fit: cover;
+<<<<<<< HEAD
 }
 
 .card-image{
@@ -246,6 +288,20 @@ img {
     margin-top: 20px;
 }
 
+=======
+}
+
+.card-image{
+    width:100%;
+    max-width:600px;
+    border-radius: 10px;
+}
+
+.card-content{
+    margin-top: 20px;
+}
+
+>>>>>>> eb35c7d7a9600cf4bcc0f2e716965180c37b6133
 
 /* SKILLS */
 .skills {
@@ -281,6 +337,7 @@ footer {
   color: var(--white);
   padding:  20px;
   text-align: center;
+<<<<<<< HEAD
 }
 
 .contact {
@@ -288,6 +345,15 @@ footer {
   padding: 0 20px;
 }
 
+=======
+}
+
+.contact {
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+>>>>>>> eb35c7d7a9600cf4bcc0f2e716965180c37b6133
 /* DARK MODE VIEW */
 .dark-mode {
   background: var(--grey-800);
@@ -349,6 +415,7 @@ footer {
     padding: 25px;
     border-radius: 2px;
     box-shadow: var(--shadow-1);
+<<<<<<< HEAD
 }
 
 .analysis {
@@ -364,6 +431,23 @@ footer {
   box-shadow: var(--shadow-1);
 }
 
+=======
+}
+
+.analysis {
+    margin-bottom: 40px;
+}
+
+/* IMAGE */
+.analysis-image{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    border-radius: 4px;
+  box-shadow: var(--shadow-1);
+}
+
+>>>>>>> eb35c7d7a9600cf4bcc0f2e716965180c37b6133
 .dashboard-image-container{
     width: 100%;
     max-width: 700px;
@@ -403,6 +487,7 @@ td{
     text-align: left;
 }
 
+<<<<<<< HEAD
 
 /* TOOLTIP */
 .tooltip {
@@ -467,5 +552,64 @@ text-align: center;
 ol li{
     margin: 8px 0;
 }
+=======
+
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--bright-blue);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--grey-400);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--grey-400) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.space {
+text-align: center;
+}
+
+.space a{
+    color: var(--bright-blue);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+>>>>>>> eb35c7d7a9600cf4bcc0f2e716965180c37b6133
 
 
